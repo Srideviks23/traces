@@ -6,7 +6,7 @@ const app = express();
 const restResponseTimeHistogram = new client.Histogram({
   name: "rest_response_time_duration_seconds",
   help: "This is Rest API Response Time in seconds",
-  labelNames: ["method", "route", "status_code"]
+  labelNames: ["method", "route", "status_code"],
   // buckets: [0.1, 5, 15, 50, 100, 500]
 });
 
