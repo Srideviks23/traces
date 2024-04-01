@@ -41,6 +41,7 @@ services:
       - ./grafana/tmp:/var/lib/grafana
     networks:
       - monitoring
+
   prometheus:
     image: prom/prometheus
     container_name: prometheus
