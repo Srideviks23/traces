@@ -6,6 +6,7 @@ services:
       context: .
     ports:
       - "5555:5555"
+      - "5556:5556"
     environment:
       - JAEGER_AGENT_HOST=jaeger # assuming Jaeger is running on a container named "jaeger"
       - JAEGER_AGENT_PORT=6831
